@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Pariwisata</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5"> <!-- Tambahkan kelas mb-5 disini -->
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">Samalona Trip</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="beranda.html">Beranda</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="paket_wisata.html">Paket Wisata</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pemesanan.html"><b>Pemesanan</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5 mt-md-0">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-6 mx-auto"> <!-- Menyesuaikan lebar kolom untuk responsif -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Form Pemesanan</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="namaPemesan" class="form-label">Nama Pemesan</label>
+                                <input type="text" class="form-control" id="namaPemesan" placeholder="Masukkan nama">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nomerTelp" class="form-label">Nomor Telepon</label>
+                                <input type="tel" class="form-control" id="nomerTelp" placeholder="Masukkan nomor telepon">
+                            </div>
+                            <div class="mb-3">
+                                <label for="wisata" class="form-label">Paket Wisata</label>
+                                <select class="form-select" id="wisata">
+                                    <option value="" selected disabled>Pilih Paket</option>
+                                    <option value="wisata1">Paket 1</option>
+                                    <option value="wisata2">Paket 2</option>
+                                    <option value="wisata3">Paket 3</option>
+                                    <option value="wisata4">Paket 4</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="waktuPerjalanan" class="form-label">Waktu Perjalanan</label>
+                                <input type="date" class="form-control" id="waktuPerjalanan">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pelayananPaket" class="form-label">Pelayanan Paket Perjalanan</label>
+                                <select class="form-select" id="pelayananPaket">
+                                    <option value="" selected disabled>Pilih Paket</option>
+                                    <option value="paket1">Paket 1</option>
+                                    <option value="paket2">Paket 2</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="jumlahPeserta" class="form-label">Jumlah Peserta</label>
+                                <input type="number" class="form-control" id="jumlahPeserta" min="1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark mt-5"> <!-- Tambahkan kelas mt-5 disini -->
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Muhammad Ridha Darwis 2024</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

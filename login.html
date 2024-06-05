@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body {
+            background-image: url('assets/login.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .card {
+            margin: 0 auto;
+            /* Center the card horizontally */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            /* Center the card vertically */
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <header>Login</header>
+                    </div>
+                    <div class="card-body">
+                        <form onsubmit="handleLogin(event)" class="row g-3">
+                            <div class="col-12">
+                                <label for="login-email" class="form-label">Email</label>
+                                <input type="email" placeholder="Email" class="form-control" id="login-email" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="login-password" class="form-label">Password</label>
+                                <input type="password" placeholder="Password" class="form-control" id="login-password"
+                                    autocomplete="off" required>
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-center mt-3">
+                                <button type="submit" class="btn btn-primary mb-3">Login</button>
+                            </div>
+                        </form>
+
+                        <div class="form-link text-center">
+                            <span>Don't have an account? <a href="signup.html" class="link">Signup</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+
+            // Simulate login validation
+            if (email === "user@example.com" && password === "password123") {
+                window.location.href = "beranda.html";
+            } else {
+                alert("Invalid email or password. Please try again.");
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body {
+            background-image: url('assets/login.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .card {
+            margin: 0 auto;
+            /* Center the card horizontally */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            /* Center the card vertically */
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            /* semi-transparent background */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <header>Signup</header>
+                    </div>
+                    <div class="card-body">
+                        <form onsubmit="handleSignup(event)" class="row g-3">
+                            <div class="col-12">
+                                <label for="signup-email" class="form-label">Email</label>
+                                <input type="email" placeholder="Email" class="form-control" id="signup-email">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="signup-password" class="form-label">Create password</label>
+                                <input type="password" placeholder="Create password" class="form-control"
+                                    id="signup-password">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="confirm-password" class="form-label">Confirm password</label>
+                                <input type="password" placeholder="Confirm password" class="form-control"
+                                    id="confirm-password">
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-center mt-3">
+                                <button type="submit" class="btn btn-primary mb-3">Signup</button>
+                            </div>
+                        </form>
+
+                        <div class="form-link text-center">
+                            <span>Already have an account? <a href="login.html" class="link">Login</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
